@@ -9,10 +9,17 @@
     </head>
     <body>
         <div class="container">
-            <form action ="" class="searchbar">
-                <input type="text" class="form__field"  name="name" id='name' required />
-                <button><i class="fa-solid fa-magnifying-glass"></i></button>
-            </form>
+            <p id="ora"></p>
         </div>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+                const date = new Date();
+                const p = document.getElementById("ora");
+                p.innerHTML = date.getHours() + ":" + date.getMinutes();
+
+
+                var bgs = ["photos\196136.jpg", "photos\411820.jpg", "photos\476288.jpg"];
+
+                $('html').css({'background':' url(' + images[Math.floor(Math.random() * bgs.length)] + ")"});
+        </script>
     </body>
 </html>

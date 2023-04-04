@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+
 html{
-    background-image: url("background.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
 }
 
 .container{
@@ -10,28 +15,13 @@ html{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    backdrop-filter: blur(30px);
+    padding: 0 40px;
+    border-radius:20px;
 }
 
-.searchbar{
-    background-color: rgba(255, 255, 255, 0.281);
-    backdrop-filter: blur(20px);   
-    border-radius: 30px;
-    padding: 20px;
-}
-.container input{
-    background-color: transparent;
-    border-style: none;
-    color: blanchedalmond;
-    outline: 0;
-    font-size: 2rem;
-    transition: border-color 0.2s;
-}
-
-button{
-    color: white;
-    border-color: white;
-    background: transparent;
-    border-style: solid;
-    border-radius: 50%;
-    padding: 15px;
+.container p{
+    color:aliceblue;
+    font-size: 3rem;
+    text-align: center;
 }
