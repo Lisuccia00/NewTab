@@ -7,19 +7,19 @@
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <script src="https://kit.fontawesome.com/865c0cfb4a.js" crossorigin="anonymous"></script>
     </head>
-    <body>
+    <body onload="getBG()">
         <div class="container">
             <p id="ora"></p>
         </div>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+        <script>
                 const date = new Date();
                 const p = document.getElementById("ora");
                 p.innerHTML = date.getHours() + ":" + date.getMinutes();
+                function getBG(){
+                    var bgs = ["bg1.jpg", "bg2.jpg", "bg3.jpg"];
 
-
-                var bgs = ["photos\196136.jpg", "photos\411820.jpg", "photos\476288.jpg"];
-
-                $('html').css({'background':' url(' + images[Math.floor(Math.random() * bgs.length)] + ")"});
+                    document.getElementsByTagName('body')[0].style.backgroundImage = " url(" + bgs[Math.floor(Math.random() * bgs.length)] + ")";
+                }
         </script>
     </body>
 </html>
